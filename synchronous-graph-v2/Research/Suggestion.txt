@@ -1,0 +1,22 @@
+
+
+for each edge (x,y) you're algorithm should do the following:
+    1. based on gamma(x), prod(x), and cons(y) you should calculate a temporary value for gamma(y) (obviously, that cannot be done with the 
+       lcm that you used below, because you cannot make use of a gamma(y) that you just want to calculate, thats like lifting a plank, while standing on it). 
+       It can be based on lcm, but not by using gamma(y), because this is exactly what you want to calculate.
+       Think about a procedure, how to calculate gamma(y).
+
+    2. you need to check, if the temporary gamma(y) is integer, if not, you need to change gamma(x) by multiplication with a number, such that if you calculate the temporary gamma(y) with the same procedure again, you end up with an integer. 
+       That change of gamma(x) involves a multiplication, which has to be done on all repetition vector entries that have been calculated so far (if the rest are zero entries in the repetition vector, you just multiply the whole vector.
+
+    3. with that change, you recalculate your temporary gamma(y) again, which should now be integer 
+       and this is the part where you check if you already calculated it previously 
+       (you check for a non-zero entry in the repetition vector for y), If it is zero, you place that newly calculated temporary gamma(y) in the repetition vector. 
+       But if it was non-zero, it has to be equal to what you calculated, so: if its equal, go to the next edge and repeat from step 1., otherwise, you can stop, because the graph is not consistent.
+
+
+History.
+--------
+- synchronous data flow graph (SDF)
+- A and B gamma for edge 0 then go to edge 1 
+- Markus Dupree

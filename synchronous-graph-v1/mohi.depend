@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1605475170 source:c:\users\unixt\onedrive\desktop\pushe\mohi\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"helpers.h"
+
+1605475184 c:\users\unixt\onedrive\desktop\pushe\mohi\helpers.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605474963 source:c:\users\unixt\onedrive\desktop\pushe\mohi\helpers.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"helpers.h"
+
+1605475228 source:c:\users\unixt\onedrive\desktop\pushe\mohi\helpers.cpp
+	"helpers.h"
+

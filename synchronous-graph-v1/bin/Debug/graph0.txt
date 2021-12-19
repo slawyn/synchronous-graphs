@@ -1,0 +1,12 @@
+graph 3 5 {
+	node: a
+	node: b
+	node: c
+	
+	edge: a b 1 2
+	edge: b a 2 1
+	edge: b b 1 1
+	edge: b c 3 2
+	edge: c b 2 3
+
+}

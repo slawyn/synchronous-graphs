@@ -1,0 +1,12 @@
+graph 4 5 {
+	node: a
+	node: b
+	node: c
+	node: d
+
+	edge: a d 8 2
+	edge: d b 2 1
+	edge: b a 1 8
+	edge: d c 2 1
+	edge: c a 1 8
+}
